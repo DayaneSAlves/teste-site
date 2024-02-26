@@ -43,11 +43,11 @@ function App() {
       <div className='premenu' id="home">
         <div className="container-xl justify-content-center d-flex align-items-center">
           <div className="row justify-content-between">
-            <div className="col-md-auto">
-              <p>Atendimento Seg a Qui - 8:00 às 18:00 | Sextas - 8:00 as 17:00 | Sábado das 8:00 as 13:00</p>
+            <div className="col-12 px-0 px-md-4 col-md-auto">
+              <p>Atendimento Seg a Qui - 8:00 às 18:00 | Sextas - 8:00 as 17:00 | Sábado das 8:00 as 13:00 <span className='d-flex d-md-none'> - Fale com a administração: <a href='tel:5511992074058'> (11) 99207-4058</a></span></p>
             </div>
             <div className="col-md-auto">
-              <p>Fale com a administração: <a href='tel:5511992074058'>(11) 99207-4058</a></p>
+              <p className='d-none d-md-flex'>Fale com a administração: <a href='tel:5511992074058'>(11) 99207-4058</a></p>
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@ function App() {
       </div>
 
       <div className="onde-atuamos" id="onde-atuamos">
-        <div className="container">
+        <div className="container d-flex flex-column align-items-center">
           <div className="row">
             <div className="col-md-12">
               <h2 className='pre-title'>Conheça</h2>
@@ -334,28 +334,28 @@ function App() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="bloco-atuacao">
                 <img src={iconResidencias} alt="" className='icon-atuacao' />
                 <h5>Residências</h5>
                 <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento" className="btn-solicitar-orcamento">Solicitar Orçamento</a>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="bloco-atuacao">
                 <img src={iconComercios} alt="" className='icon-atuacao' />
                 <h5>Comércios</h5>
                 <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento" className="btn-solicitar-orcamento">Solicitar Orçamento</a>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="bloco-atuacao">
                 <img src={iconEscolas} alt="" className='icon-atuacao' />
                 <h5>Escolas</h5>
                 <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento" className="btn-solicitar-orcamento">Solicitar Orçamento</a>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="bloco-atuacao">
                 <img src={iconHospitais} alt="" className='icon-atuacao' />
                 <h5>Hospitais</h5>
@@ -420,15 +420,15 @@ function App() {
       <div className="licencas">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-12 col-md-4 mb-4 mb-md-1">
               <h3>Licenças</h3>
               <p>Somos uma empresa certificada e qualificada para oferecer o melhor serviço.</p>
             </div>
-            <div className="col-md-8">
+            <div className="col-12 col-md-8">
               <div className="row justify-content-between align-items-center">
-                <div className="col-md-auto"><img src={licenca1} alt="Licença CRQ" /></div>
-                <div className="col-md-auto"><img src={licenca2} alt="Licença Anvisa" /></div>
-                <div className="col-md-auto"><img src={licenca3} alt="Licença Bombeiro" /></div>
+                <div className="col-4 col-md-auto"><img src={licenca1} alt="Licença CRQ" /></div>
+                <div className="col-5 col-md-auto"><img src={licenca2} alt="Licença Anvisa" /></div>
+                <div className="col-2 col-md-auto"><img src={licenca3} alt="Licença Bombeiro" /></div>
               </div>
             </div>
           </div>
@@ -455,10 +455,10 @@ Valores
         </div>
       </div>
       <div className="form-contato" id="contato">
-        <div className="container p-0">
+        <div className="container p-md-0">
           <div className="contato">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-12 col-md-5">
                 <h2>Precisando <br className='d-none d-md-block' /> Dedetizar?</h2>
                 <h3>Entre em contato  <br className='d-none d-md-block' /> conosco e agende já <br className='d-none d-md-block' />um dos nossos serviços.</h3>
                 <div className="infos">
@@ -480,8 +480,8 @@ Valores
                   </div>
                 </div>
               </div>
-              <div className="line"></div>
-              <div className="col-md-7">
+              <div className="line d-none d-md-flex"></div>
+              <div className="col-12 col-md-7">
                 <div className="contact-lead">
                   <h2>Nos envie uma mensagem.</h2>
                   <Formik
@@ -497,7 +497,7 @@ Valores
                     {({ handleSubmit, handleChange, values, touched, errors }) => (
                       <Form noValidate onSubmit={handleSubmit}>
                         <Row  >
-                          <Form.Group as={Col} md="12" controlId="validationFormik01">
+                          <Form.Group as={Col} className='col-12' md="12" controlId="validationFormik01">
                             <InputGroup hasValidation>
                               <Form.Control
                                 type="nome"
@@ -576,12 +576,12 @@ Valores
       </div>
       <footer className='rodape'>
         <div className="container">
-          <div className="row">
+          <div className="row mt-md-4">
             <div className="col-md-6">
-              <p>@2024 Control Química Dedetizadora. Todos os Direitos Reservados</p>
+              <p className='mt-5'>@2024 Control Química Dedetizadora. Todos os Direitos Reservados</p>
             </div>
             <div className="col-md-6 d-flex justify-content-end">
-              <p>Desenvolvido por: <a href="https://api.whatsapp.com/send?phone=5511998702675&&text=Olá vim através do site Control Química Dedetizadora, gostaria de fazer um orçamento" ><img src={logoFennecFox} /></a></p>
+              <p className='mt-0 mt-md-5'>Desenvolvido por: <a href="https://api.whatsapp.com/send?phone=5511998702675&&text=Olá vim através do site Control Química Dedetizadora, gostaria de fazer um orçamento" ><img src={logoFennecFox} /></a></p>
             </div>
           </div>
         </div>
