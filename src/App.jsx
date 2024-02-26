@@ -47,7 +47,7 @@ function App() {
               <p>Atendimento Seg a Qui - 8:00 às 18:00 | Sextas - 8:00 as 17:00 | Sábado das 8:00 as 13:00</p>
             </div>
             <div className="col-md-auto">
-              <p>Fale com a administração: <a href='tel:5511966475166'>(11) 96647-5166</a></p>
+              <p>Fale com a administração: <a href='tel:5511992074058'>(11) 99207-4058</a></p>
             </div>
           </div>
         </div>
@@ -89,10 +89,10 @@ function App() {
                     <Nav.Item className='tabs'>
                       <Nav.Link eventKey="1">
                         <div className="row d-flex flex-nowrap">
-                          <div className="col-md-auto pe-0 d-flex align-items-center">
+                          <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
                             <img src={iconService1} alt="" />
                           </div>
-                          <div className="col-md-9">
+                          <div className="col-9 col-md-9">
                             <h4>DESINSETIZAÇÃO</h4>
                             <p>Ambiente seguro, higiênico<br /> e livre de pragas.</p>
                           </div>
@@ -102,10 +102,10 @@ function App() {
                     <Nav.Item className='tabs'>
                       <Nav.Link eventKey="2">
                         <div className="row d-flex flex-nowrap">
-                          <div className="col-md-auto pe-0 d-flex align-items-center">
+                          <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
                             <img src={iconService2} alt="" />
                           </div>
-                          <div className="col-md-9">
+                          <div className="col-9 col-md-9">
                             <h4>DESRATIZAÇÃO</h4>
                             <p>Sua casa em paz e livre de roedores indesejáveis.</p>
                           </div>
@@ -115,10 +115,10 @@ function App() {
                     <Nav.Item className='tabs'>
                       <Nav.Link eventKey="3">
                         <div className="row d-flex flex-nowrap">
-                          <div className="col-md-auto pe-0 d-flex align-items-center">
+                          <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
                             <img src={iconService3} alt="" />
                           </div>
-                          <div className="col-md-9">
+                          <div className="col-9 col-md-9">
                             <h4>DESCUPINIZAÇÃO</h4>
                             <p>Eficácia na proteção da sua casa contra cupins.</p>
                           </div>
@@ -128,10 +128,10 @@ function App() {
                     <Nav.Item className='tabs'>
                       <Nav.Link eventKey="4">
                         <div className="row d-flex flex-nowrap">
-                          <div className="col-md-auto pe-0 d-flex align-items-center">
+                          <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
                             <img src={iconService4} alt="" />
                           </div>
-                          <div className="col-md-9">
+                          <div className="col-9 col-md-9">
                             <h4>SANITIZAÇÃO</h4>
                             <p>Seu espaço higienizado livre de bactérias.</p>
                           </div>
@@ -434,19 +434,39 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="quem-somos d-none">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p>A Control Química Dedetizadora, é uma empresa que surgiu da ideia de um casal, formados em Recursos Humanos e Química, após se especializarem na area de Controle de Pragas Urbanas  fundaram á empresa, com uma equipe técnica especializada para atender seus clientes com qualidade e responsabilidade, utizando métodos seguros e eficaz, eliminando completamente as pragas indesejadas.</p>
+            </div>
+            <div className="col-md-6">
+            Missão
+Atender com excelência todos os clientes com profissionalismo, utilizando sempre produtos e equipamentos de qualidade e com tecnologia inovadoras, zelando pelo meio ambiente, pela sociedade e economia sustentável.
+
+Visão
+Ser a empresa reconhecida regionalmente pela excelência em sua gestão, qualidade e confiabilidade em seus serviços.
+
+Valores
+Ética, Transparência, Sustentabilidade, Comprometimento, Excelência e Desenvolvimento de pessoas
+
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="form-contato" id="contato">
         <div className="container p-0">
           <div className="contato">
             <div className="row">
               <div className="col-md-5">
                 <h2>Precisando <br className='d-none d-md-block' /> Dedetizar?</h2>
-                <h3>Entre em contato conosco e<br className='d-none d-md-block' /> conheça como podemos<br className='d-none d-md-block' /> dedetizar seu ambiente.</h3>
+                <h3>Entre em contato  <br className='d-none d-md-block' /> conosco e agende já <br className='d-none d-md-block' />um dos nossos serviços.</h3>
                 <div className="infos">
                   <div className="row linha">
                     <div className="col-md-auto pe-0"><img src={iconTelefone} /></div>
                     <div className="col-md-auto">
                       <h4>Ligue ou chame no Whats</h4>
-                      <a href='tel:5511976605259' className='me-1'>11 97660-5259</a> | <a href='tel:5511966475166' className='ms-1'>11 96647-5166</a>
+                      <a href='tel:5511992074058' className='me-1'>11 99207-4058</a> | <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento" className='ms-1'>11 96647-5166</a>
                     </div>
                   </div>
                   <div className="row linha">
