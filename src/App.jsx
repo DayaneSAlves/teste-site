@@ -1,5 +1,6 @@
 
 import Container from 'react-bootstrap/Container';
+import Accordion from 'react-bootstrap/Accordion';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Col from 'react-bootstrap/Col';
@@ -80,11 +81,11 @@ function App() {
             <h3 className='subtitle-bloco'>Evite surtos de doenças, mantenha um ambiente agradável e seguro sem a convivência indesejadas de pragas e prevenção de prejuízos.</h3>
           </div>
         </div>
-        <div className="row">
+        <div className="row d-none d-md-flex">
           <div className="tab-service">
             <Tab.Container id="left-tabs-example" defaultActiveKey="1">
               <Row>
-                <Col sm={4} className='pe-0'>
+                <Col sm={4} className='p-0 col-12'>
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item className='tabs'>
                       <Nav.Link eventKey="1">
@@ -140,9 +141,9 @@ function App() {
                     </Nav.Item>
                   </Nav>
                 </Col>
-                <Col sm={8} className='ps-0'>
-                  <Tab.Content>
-                    <Tab.Pane eventKey="1">
+                <Col sm={8} className='p-0 col-12'>
+                  <Tab.Content >
+                    <Tab.Pane eventKey="1" >
                       <div className="row">
                         <div className="col-md-12">
                           <h2>A desinsetização é um procedimento essencial.</h2>
@@ -322,6 +323,234 @@ function App() {
             </Tab.Container>
           </div>
         </div>
+        <div className="row d-flex d-md-none">
+          <div className="tab-service">
+            <Accordion defaultActiveKey="1">
+              <Accordion.Item eventKey="1">
+                <Accordion.Header className='tabs'> <div className="row d-flex flex-nowrap">
+                  <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
+                    <img src={iconService1} alt="" />
+                  </div>
+                  <div className="col-9 col-md-9">
+                    <h4>DESINSETIZAÇÃO</h4>
+                    <p>Ambiente seguro, higiênico<br /> e livre de pragas.</p>
+                  </div>
+                </div></Accordion.Header>
+                <Accordion.Body>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h2>A desinsetização é um procedimento essencial.</h2>
+                      <p>Feito por meio do uso de técnicas e produtos específicos, para garantir o conforto, a segurança e a higiene em nosso ambiente. Ela trata do controle de pragas, eliminando e prevenindo infestações de insetos e animais indesejados em residências, estabelecimentos comerciais e industriais.
+                      </p>
+                      <p>Ou seja, ela não apenas livra a sua casa dessas criaturas indesejadas, mas também protege a sua saúde, proporcionando um ambiente seguro, higiênico e livre de pragas, recuperando a paz em seu lar para desfrutar de momentos de tranquilidade sem essa preocupação constante.
+                      </p>
+                      <h3>MÉTODOS UTILIZADOS PARA DESINSETIZAÇÃO:</h3>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h4>Inspeção:</h4>
+                      <h5>Um profissional qualificado realiza uma inspeção minuciosa para identificar as pragas presentes, seu nível de infestação e as áreas afetadas, além disso pode ser que nessa hora ele ofereça um orçamento de acordo com o plano de ação que será seguido;</h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Planejamento:</h4>
+                      <h5>Com base na inspeção, é desenvolvido um plano de ação ersonalizado que inclui os produtos adequados e as técnicas de aplicação mais eficazes para eliminar as pragas;</h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Aplicação:</h4>
+                      <h5>Os produtos são aplicados de acordo com o plano de ação, seja por meio de pulverização, gel, armadilhas ou outros métodos apropriados para cada tipo de praga;</h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Medidas preventivas:</h4>
+                      <h5>Além de eliminar as pragas existentes, são tomadas medidas preventivas para evitar futuras infestações, como o fechamento de pontos de entrada, a orientação sobre boas práticas de higiene e a utilização de produtos repelentes.</h5>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento de Desinsetização" className='btn-orcamento'>
+                        Solicitar Orçamento
+                      </a>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header className='tabs'>
+                  <div className="row d-flex flex-nowrap">
+                    <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
+                      <img src={iconService2} alt="" />
+                    </div>
+                    <div className="col-9 col-md-9">
+                      <h4>DESRATIZAÇÃO</h4>
+                      <p>Sua casa em paz e livre de roedores indesejáveis.</p>
+                    </div>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h2>Entenda sobre os Ratos</h2>
+                      <p>As três espécies de ratos consideradas pragas urbanas são: Rattus Novergicus(ratazana, rato de esgoto); Rattus rattus(rato de telhado, rato preto); Mus musculus(camundongo, catita) – atualmente com a nomenclatura de Mus domesticus.
+                      </p>
+                      <p>Os ratos são uma praga que atinge a maior parte das cidades do mundo todo. Eles trazem diversos prejuízos a população local e podem transmitir inúmeras doenças. Entre as patologias transmitidas pelo rato, estão peste bubônica, leptospirose, tifo murino e hantavirose, triquinose e salmonelose. Por isso, o combate aos ratos torna-se essencial nas casas, condomínios e empresas.
+                      </p>
+                      <h3>MÉTODOS UTILIZADOS NA DESRATIZAÇÃO:</h3>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h4>Iscagem:</h4>
+                      <h5>Realizada através de posicionamento do veneno em pontos estratégicos. O veneno atrai os ratos e pode infectar também a colônia, dependendo da espécie.
+                      </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Povilhamento:</h4>
+                      <h5>Feita através do uso de pó seco inodoro, o polvilhamento também é efetivo contra indivíduos e colônias através da sua ação residual e transporte pelos próprios animais.</h5>
+                    </div>
+                    <div className="col-md-6 m-auto">
+                      <h4>Dispositivos de Captura:</h4>
+                      <h5>Também é indicado para casos de monitoramento ou para onde o uso de produtos químicos é impossibilitado. Considerado uma forma humana de lidar com os roedores urbanos.</h5>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento para Desratização" className='btn-orcamento'>
+                        Solicitar Orçamento
+                      </a>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3">
+                <Accordion.Header className='tabs'>
+                  <div className="row d-flex flex-nowrap">
+                    <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
+                      <img src={iconService3} alt="" />
+                    </div>
+                    <div className="col-9 col-md-9">
+                      <h4>DESCUPINIZAÇÃO</h4>
+                      <p>Eficácia na proteção da sua casa contra cupins.</p>
+                    </div>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h2>Eliminando os Cupins</h2>
+                      <p>Cupins ou Térmitas são insetos que se alimentam de madeira (e outros componentes celulósicos) e, em seu habitat natural,desempenham uma importante função na natureza relacionada a converter restos vegetais e árvores mortas e matéria orgânica(húmos),que é um dos componentes enriquecedores do solo. </p>
+                      <p>Devido a essas características, no entanto,estes insetos apresentam-se potencialmente danosos ao homem quando encontram madeira ou outros materiais celulósicos de importância econômica,tais como madeiras com função estrutural em residências,livros,móveis,etc.As principais espécies de Cupins no Brasil são:Cryptotermes brevis(Cupins de madeira seca);Coptotermes gestroi(Cupins de solo);Nasutitermes sp(arbóreos).</p>
+                      <h3>MÉTODOS UTILIZADOS PARA DESCUPINIZAÇÃO:</h3>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h4>Investigação técnica:</h4>
+                      <h5>nessa etapa é feita uma inspeção minuciosa do local, identificando focos de infestação, núcleo do cupinzeiro, tipo de cupim e avaliando o grau de comprometimento do local dominado pela praga.
+                      </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Definição do tratamento:</h4>
+                      <h5>Após identificar o tipo de cupim e o tamanho da colônia, é possível estabelecer qual processo de imunização adequado para acabar com cupins, definindo o produto químico e estratégias adequadas para acabar com a praga. O local precisa ser avaliado para traçar estratégias de combate à infestação
+                      </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Dedetização:</h4>
+                      <h5>Nessa etapa é realizada a aplicação da técnica definida para o controle da infestação. Nesse processo, os profissionais utilizam equipamentos de proteção individual para a aplicação de venenos que sejam eficazes contra cupins.</h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Monitoramento do local e renovação:</h4>
+                      <h5>A última etapa do processo é o monitoramento do serviço executado, avaliando a eficácia no combate à infestação de cupins e sugerindo ações preventivas para evitar a formação de novas colônias.</h5>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h3>TIPOS DE DESCUPINIZAÇÃO:</h3>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h4>Descupinização com barreira química:</h4>
+                      <h5>O processo com barreira química costuma ser utilizado em controle de cupins subterrâneos, com a aplicação de produtos no solo, paredes e tetos, evitando que as pragas se espalhem pela casa.
+                      </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Descupinização com tratamento de madeira:</h4>
+                      <h5>O processo é feito com a aplicação de veneno para cupins em madeiras, aplicando o produto através de pulverizações e furos estratégicos para acabar com a colônia de cupins. </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Descupinização com tratamento de conduítes:</h4>
+                      <h5>Nesse processo são utilizados produtos químicos que bloqueiam a passagem de cupins, evitando que a praga possa infestar novos pontos.
+                      </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Descupinização localizada: </h4>
+                      <h5>Esse tipo de tratamento é feito em locais específicos atingidos pela infestação de cupins, aplicando produtos químicos que ajudem a combater a infestação
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento para Descupinização" className='btn-orcamento'>
+                        Solicitar Orçamento
+                      </a>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4">
+                <Accordion.Header className='tabs'>
+                  <div className="row d-flex flex-nowrap">
+                    <div className="col-3 col-md-auto pe-0 d-flex align-items-center">
+                      <img src={iconService4} alt="" />
+                    </div>
+                    <div className="col-9 col-md-9">
+                      <h4>SANITIZAÇÃO</h4>
+                      <p>Seu espaço higienizado livre de bactérias.</p>
+                    </div>
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h2>Livre de microoorganismos.</h2>
+                      <p>Sanitização é um processo de redução dos microorganismos e bactérias patogênicos, até um nível considerado aceitável pelos órgãos de saúde pública, como a ANVISA (Agência Nacional de Vigilância Sanitária). Portanto, o intuito dessa técnica não é somente deixar o local limpo, mas garantir a biossegurança do espaço higienizado. Com a drástica redução dos agentes patogênicos, as chances de contaminação caem consideravelmente.</p>
+                      <p>Dessa forma, o ambiente se torna seguro para seres humanos. No local de trabalho, por exemplo, uma empresa que realiza a sanitização periódica tem menos chances de sofrer processos trabalhistas. Isso porque, ela possuirá certificados que conferem a redução do risco de contaminação. Vale destacar que os produtos utilizados nesse procedimento são diferentes daqueles usados na limpeza, e devem atender as regras da ANVISA.
+                      </p>
+                      <h3>MÉTODO UTILIZADO PARA SANITIZAÇÃO:</h3>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h4>Como funciona:</h4>
+                      <h5>Uma sanitização eficiente é realizada com quaternário de amônia, pois não deixa resíduos de microorganismos ou de produtos químicos. Nesse sentido, é altamente utilizado em diversos ambientes, como transportes públicos, lojas comerciais, industriais  e outros. </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Produtos:</h4>
+                      <h5>Cada procedimento de sanitização requer um produto específico, indicado para o tipo de germe a ser eliminado.
+                      </h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Nebulização:</h4>
+                      <h5>Após isso, é feita uma nebulização sobre as superfícies para criar uma película protetora, impedindo a proliferação de microorganismos. Como a nebulização ainda é um tratamento sanitizante, que usa produtos químicos, a circulação de pessoas no local só é permitida após algumas horas;</h5>
+                    </div>
+                    <div className="col-md-6">
+                      <h4>Realização:</h4>
+                      <h5>De modo geral, a sanitização reduz grande parte dos agentes patogênicos e costuma ser realizada por empresas tercerizadas.
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <a href="https://api.whatsapp.com/send?phone=5511966475166&&text=Olá vim através do site Control Química Dedetizadora e gostaria de fazer um orçamento para Sanitização" className='btn-orcamento'>
+                        Solicitar Orçamento
+                      </a>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </div>
+        </div>
       </div>
 
       <div className="onde-atuamos" id="onde-atuamos">
@@ -419,37 +648,41 @@ function App() {
       </div>
       <div className="licencas">
         <div className="container">
+          <div className="row mb-5 line-horizontal">
+            <div className="col-12 col-md-4 mb-5 mb-md-0">
+              <h3>Quem Somos</h3>
+              <p>A Control Química Dedetizadora, é uma empresa que surgiu da ideia de um casal, formados em Recursos Humanos e Química, após se especializarem na area de Controle de Pragas Urbanas  fundaram á empresa, com uma equipe técnica especializada para atender seus clientes com qualidade e responsabilidade, utizando métodos seguros e eficaz, eliminando completamente as pragas indesejadas.</p>
+            </div>
+            <div className="col-12 col-md-8 d-flex align-items-center">
+              <div className="row">
+                <div className="col-12 col-md-4 mb-5 mb-md-0">
+                  <h4 className='detalhes-titulo'>Missão</h4>
+                  <p className='detalhes'>Atender com excelência todos os clientes com profissionalismo, utilizando sempre produtos e equipamentos de qualidade e com tecnologia inovadoras, zelando pelo meio ambiente, pela sociedade e economia sustentável.</p>
+                </div>
+                <div className="col-12 col-md-4 mb-5 mb-md-0">
+                  <h4 className='detalhes-titulo'>Visão</h4>
+                  <p className='detalhes'>Ser a empresa reconhecida regionalmente pela excelência em sua gestão, qualidade e confiabilidade em seus serviços.</p>
+                </div>
+                <div className="col-12 col-md-4">
+                  <h4 className='detalhes-titulo'>Valores</h4>
+                  <p className='detalhes'>Ética, Transparência, Sustentabilidade, Comprometimento, Excelência e Desenvolvimento de pessoas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
           <div className="row">
             <div className="col-12 col-md-4 mb-4 mb-md-1">
               <h3>Licenças</h3>
               <p>Somos uma empresa certificada e qualificada para oferecer o melhor serviço.</p>
             </div>
             <div className="col-12 col-md-8">
-              <div className="row justify-content-between align-items-center">
+              <div className="row justify-content-between justify-content-center align-items-center">
                 <div className="col-4 col-md-auto"><img src={licenca1} alt="Licença CRQ" /></div>
                 <div className="col-5 col-md-auto"><img src={licenca2} alt="Licença Anvisa" /></div>
                 <div className="col-2 col-md-auto"><img src={licenca3} alt="Licença Bombeiro" /></div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="quem-somos d-none">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <p>A Control Química Dedetizadora, é uma empresa que surgiu da ideia de um casal, formados em Recursos Humanos e Química, após se especializarem na area de Controle de Pragas Urbanas  fundaram á empresa, com uma equipe técnica especializada para atender seus clientes com qualidade e responsabilidade, utizando métodos seguros e eficaz, eliminando completamente as pragas indesejadas.</p>
-            </div>
-            <div className="col-md-6">
-            Missão
-Atender com excelência todos os clientes com profissionalismo, utilizando sempre produtos e equipamentos de qualidade e com tecnologia inovadoras, zelando pelo meio ambiente, pela sociedade e economia sustentável.
-
-Visão
-Ser a empresa reconhecida regionalmente pela excelência em sua gestão, qualidade e confiabilidade em seus serviços.
-
-Valores
-Ética, Transparência, Sustentabilidade, Comprometimento, Excelência e Desenvolvimento de pessoas
-
             </div>
           </div>
         </div>

@@ -14,6 +14,12 @@
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .menu-site {
   background-color: white;
   color: #415357;
@@ -127,11 +133,13 @@
   margin-top: 60px !important;
   width: 100% !important;
 }
+.tab-service .accordion-body,
 .tab-service .tab-content {
   background-color: #f7fbfe;
   padding: 65px 50px;
 }
 
+.tab-service .accordion-body h2,
 .tab-service .tab-content h2 {
   font-size: 24px;
   color: #09868e;
@@ -140,6 +148,7 @@
   text-align: left;
   margin-bottom: 20px;
 }
+.tab-service .accordion-body h3,
 .tab-service .tab-content h3 {
   font-size: 24px;
   color: #09868e;
@@ -150,6 +159,7 @@
   display: block;
 }
 
+.tab-service .accordion-body h4,
 .tab-service .tab-content h4 {
   font-size: 18px;
   color: #44af81;
@@ -159,6 +169,7 @@
   margin-bottom: 6px;
 }
 
+.tab-service .accordion-body h5,
 .tab-service .tab-content h5 {
   font-size: 16px;
   color: #4d5859;
@@ -168,6 +179,7 @@
   margin-bottom: 30px;
 }
 
+.tab-service .accordion-body p,
 .tab-service .tab-content p {
   font-size: 16px;
   color: #45484e;
@@ -182,7 +194,9 @@
   flex-direction: column;
   align-content: flex-end;
   flex-wrap: wrap;
+  width: 100%;
 }
+.tabs .accordion-button:not(.collapsed),
 .tabs .nav-link.active {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='405px' height='181px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='60.307%25' y1='0%25' y2='79.769%25'%3E%3Cstop offset='0%25' stop-color='rgb(125,209,166)' stop-opacity='1' /%3E%3Cstop offset='100%25' stop-color='rgb(81,196,203)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' fill='url(%23PSgrad_0)' d='M404.1000,-0.000 L73.372,-0.000 C49.769,-0.000 24.459,21.026 16.552,47.939 L4.187,90.026 C-9.815,137.685 12.289,180.373 55.700,180.373 L404.1000,180.373 L404.1000,-0.000 Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -191,13 +205,22 @@
   color: #fff !important;
   background-color: transparent !important;
 }
+.tabs .accordion-button:not(.collapsed) img,
 .tabs .nav-link.active img {
   filter: brightness(5);
 }
+.tabs .accordion-button img,
 .tabs .nav-link img {
   width: 62px;
   height: auto;
 }
+.tab-service .accordion-item {
+  border: none !important;
+}
+.tabs .accordion-button::after {
+  content: none;
+}
+.tabs .accordion-button,
 .tabs .nav-link {
   width: 405px;
   height: 180px;
@@ -213,17 +236,22 @@
   background-size: contain;
   background-position: right;
   filter: drop-shadow(6px 6px 26px rgba(0, 0, 0, 0.06));
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='405px' height='182px'%3E%3Cpath fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M404.1000,0.894 L73.372,0.894 C49.769,0.894 24.459,21.920 16.552,48.833 L4.187,90.920 C-9.815,138.579 12.289,181.266 55.700,181.266 L404.1000,181.266 L404.1000,0.894 Z'/%3E%3C/svg%3E");
 }
 .tabs .nav-link:hover {
   color: #4d5859;
 }
 
+.tabs .accordion-item h4,
 .tabs .nav-link h4 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 6px;
 }
+.tabs .accordion-item p,
 .tabs .nav-link p {
   font-weight: 300;
   font-size: 18px;
@@ -384,23 +412,48 @@
   align-items: center;
   margin-top: 90px;
   margin-bottom: 70px;
+  padding: 50px 0px 60px;
+  flex-wrap: wrap;
 }
 .licencas h3 {
   font-size: 36px;
-  color: #10b3d6;
+  color: #09868e;
   line-height: 1.2;
   font-weight: 300;
   text-align: left;
   margin-bottom: 20px;
+}
+.line-horizontal {
+  border-bottom: 1px solid #d9e7f2;
+  padding-bottom: 50px;
 }
 
 .licencas p {
   font-size: 18px;
   color: #45484e;
   font-weight: 300;
-  line-height: 22px;
+  line-height: 24px;
   text-align: left;
   width: 336px;
+  max-width: 100%;
+}
+
+.licencas .detalhes-titulo {
+  font-size: 28px;
+  color: #44af81;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.licencas .detalhes {
+  font-size: 16px;
+  color: #45484e;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -555,4 +608,84 @@
   margin-left: 6px;
   margin-bottom: 4px;
   width: 128px;
+}
+@media (max-width: 767px) {
+  .premenu {
+    height: auto;
+  }
+  .premenu p {
+    font-size: 12px;
+  }
+  .menu-site .navbar-brand img {
+    width: 210px;
+  }
+  .banner {
+    background-size: 210%;
+    background-position: -390px 0px;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 80px;
+  }
+
+  .onde-atuamos {
+    height: 516px;
+    padding-top: 80px;
+    margin-bottom: 182px;
+  }
+
+  .bloco-atuacao {
+    height: 162px;
+    padding: 16px 10px;
+    max-width: 100%;
+  }
+
+  .bloco-atuacao .icon-atuacao {
+    width: 50px;
+    height: 50px;
+  }
+  .bloco-atuacao h5 {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .btn-solicitar-orcamento {
+    font-size: 11px;
+    width: 100%;
+    height: 30px;
+  }
+  .person {
+    margin: 60px auto;
+  }
+  .licencas {
+    padding: 40px 16px 70px;
+  }
+  .contato {
+    padding: 92px 30px 68px;
+  }
+  .contact-lead {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .rodape {
+    margin-top: -40px;
+  }
+
+  #nossos-servicos {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tab-service {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px !important;
+    width: 100% !important;
+    align-items: center;
+    padding: 0;
+  }
+
+  .tab-service .accordion-body {
+    background-color: #f7fbfe;
+    padding: 50px 10px 50px 40px;
+  }
 }
